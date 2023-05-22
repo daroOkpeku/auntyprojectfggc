@@ -1,18 +1,17 @@
 @extends('layout.head')
 @section('content')
 <div >
-    <!-- Start -->
     <section class="relative lg:py-24 py-16">
         <div class="container">
             <div class="grid md:grid-cols-12 grid-cols-1 items-center gap-[30px]">
                 <div class="md:col-span-5">
                     <div class="relative">
-                        <img src="assets/images/about.jpg" class="rounded-xl shadow-md" alt="">
+                        <img src="https://res.cloudinary.com/okpeku/image/upload/v1634906635/samples/bike.jpg" class="rounded-xl shadow-md" alt="">
                         <div class="absolute bottom-2/4 translate-y-2/4 right-0 left-0 text-center">
-                            <a href="#!" data-type="youtube" data-id="yba7hPeTSjk"
+                            {{--  <a href="#!" data-type="youtube" data-id="yba7hPeTSjk"
                                 class="lightbox h-20 w-20 rounded-full shadow-md dark:shadow-gyay-700 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-green-600">
                                 <i class="mdi mdi-play inline-flex items-center justify-center text-2xl"></i>
-                            </a>
+                            </a>  --}}
                         </div>
                     </div>
                 </div><!--end col-->
@@ -88,7 +87,9 @@
             </div><!--end grid-->
         </div><!--end container-->
 
-        <div class="container lg:mt-24 mt-16">
+     {{--jhvghcgchggfgfxcx    --}}
+
+        {{--  <div class="container lg:mt-24 mt-16">
             <div class="grid grid-cols-1 pb-8 text-center">
                 <h3 class="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Featured Properties</h3>
 
@@ -422,11 +423,14 @@
                     </div>
                 </div>
             </div><!--en grid-->
-        </div><!--end container-->
+        </div><!--end container-->  --}}
+         {{--jhvghcgchggfgfxcx    --}}
+
+
     </section><!--end section-->
 
     <!-- Start CTA -->
-    <section class="relative py-24 bg-[url('../../assets/images/bg/01.html')] bg-no-repeat bg-center bg-fixed bg-cover">
+    {{--  <section class="relative py-24 bg-[url('../../assets/images/bg/01.html')] bg-no-repeat bg-center bg-fixed bg-cover">
         <div class="absolute inset-0 bg-black/60"></div>
         <div class="container">
             <div class="grid lg:grid-cols-12 grid-cols-1 md:text-left text-center justify-center">
@@ -453,10 +457,10 @@
                 </div>
             </div><!--end grid-->
         </div><!--end container-->
-    </section><!--end section-->
+    </section><!--end section-->  --}}
     <!-- End CTA -->
-
     <!-- Business Partner -->
+
     <section class="pt-10">
         <div class="container">
             <div class="grid md:grid-cols-6 grid-cols-2 justify-center gap-[30px]">
@@ -487,6 +491,104 @@
         </div><!--end container-->
     </section><!--end section-->
     <!-- Business Partner -->
+
+        {{--  slide show  --}}
+        <section class="w-full flex flex-col items-center">
+                     <div class="w-1/3 text-center text-4xl font-medium underline capitalize m-auto">our feedback</div>
+                     <div id="container">
+                        <div id="slider-container">
+                          <span onclick="slideRight()" class="btn"></span>
+                            <div id="slider">
+
+                              <div class="slide rounded-md shadow-md flex flex-col items-center py-1 px-1 ">
+                                <div class="w-full h-50">
+                                    <img src="https://res.cloudinary.com/okpeku/image/upload/v1682019361/roman-skrypnyk-gjA24divsqw-unsplash_zsi259.jpg" class="w-full h-full object-cover" />
+                                </div>
+                                <section class="w-full flex flex-col px-2">
+                                    <div class="w-1/2 float-left text-base text-left capitalize">Stephen Okpeku</div>
+                                    <section class="w-full text-left font-semibold">
+                                        In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to
+                                        demonstrate the visual form of a document or a typeface without relying on meaningful content.
+                                        Lorem ipsum may be used as a placeholder before final copy is available
+                                    </section>
+                                </section>
+                              </div>
+
+                              <div class="slide rounded-md shadow-md flex flex-col items-center py-1 px-1 ">
+                                <div class="w-full h-50">
+                                    <img src="https://res.cloudinary.com/okpeku/image/upload/v1682019361/roman-skrypnyk-gjA24divsqw-unsplash_zsi259.jpg" class="w-full h-full object-cover" />
+                                </div>
+                                <section class="w-full flex flex-col px-2">
+                                    <div class="w-1/2 float-left text-base text-left capitalize">Stephen Okpeku</div>
+                                    <section class="w-full text-left font-semibold">
+                                        In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to
+                                        demonstrate the visual form of a document or a typeface without relying on meaningful content.
+                                        Lorem ipsum may be used as a placeholder before final copy is available
+                                    </section>
+                                </section>
+                              </div>
+
+                              <div class="slide rounded-md shadow-md flex flex-col items-center py-1 px-1 ">
+                                <div class="w-full h-50">
+                                    <img src="https://res.cloudinary.com/okpeku/image/upload/v1682019361/roman-skrypnyk-gjA24divsqw-unsplash_zsi259.jpg" class="w-full h-full object-cover" />
+                                </div>
+                                <section class="w-full flex flex-col px-2">
+                                    <div class="w-1/2 float-left text-base text-left capitalize">Stephen Okpeku</div>
+                                    <section class="w-full text-left font-semibold">
+                                        In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to
+                                        demonstrate the visual form of a document or a typeface without relying on meaningful content.
+                                        Lorem ipsum may be used as a placeholder before final copy is available
+                                    </section>
+                                </section>
+                              </div>
+
+
+                              <div class="slide rounded-md shadow-md flex flex-col items-center py-1 px-1 ">
+                                <div class="w-full h-50">
+                                    <img src="https://res.cloudinary.com/okpeku/image/upload/v1682019361/roman-skrypnyk-gjA24divsqw-unsplash_zsi259.jpg" class="w-full h-full object-cover" />
+                                </div>
+                                <section class="w-full flex flex-col px-2">
+                                    <div class="w-1/2 float-left text-base text-left capitalize">Stephen Okpeku</div>
+                                    <section class="w-full text-left font-semibold">
+                                        In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to
+                                        demonstrate the visual form of a document or a typeface without relying on meaningful content.
+                                        Lorem ipsum may be used as a placeholder before final copy is available
+                                    </section>
+                                </section>
+                              </div>
+{{--
+                              <div class="slide rounded-md shadow-md flex flex-col items-center py-1 px-1 ">
+                                <div class="w-full h-50">
+                                    <img src="https://res.cloudinary.com/okpeku/image/upload/v1682019361/roman-skrypnyk-gjA24divsqw-unsplash_zsi259.jpg" class="w-full h-full object-cover" />
+                                </div>
+                                <section class="w-full flex flex-col px-2">
+                                    <div class="w-1/2 float-left text-base text-left capitalize">Stephen Okpeku</div>
+                                    <section class="w-full text-left font-semibold">
+                                        In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to
+                                        demonstrate the visual form of a document or a typeface without relying on meaningful content.
+                                        Lorem ipsum may be used as a placeholder before final copy is available
+                                    </section>
+                                </section>
+                              </div>  --}}
+
+
+                              {{--  <div class="slide"><span>6</span></div>
+                              <div class="slide"><span>7</span></div>
+                              <div class="slide"><span>8</span></div>
+                              <div class="slide"><span>9</span></div>
+                              <div class="slide"><span>10</span></div>  --}}
+
+                          </div>
+                          <span onclick="slideLeft()" class="btn"></span>
+                        </div>
+                      </div>
+
+        </section>
+
+         {{--  slide show  --}}
+
+
+
 
     <!-- End -->
 
@@ -606,10 +708,89 @@
             </div><!--end container-->
         </div>
     </footer><!--end footer-->
+    <script type="text/javascript">
+
+        var container = document.getElementById('container')
+        var slider = document.getElementById('slider');
+        var slides = document.getElementsByClassName('slide').length;
+        var buttons = document.getElementsByClassName('btn');
 
 
+        var currentPosition = 0;
+        var currentMargin = 0;
+        var slidesPerPage = 0;
+        var slidesCount = slides - slidesPerPage;
+        var containerWidth = container.offsetWidth;
+        var prevKeyActive = false;
+        var nextKeyActive = true;
 
+        window.addEventListener("resize", checkWidth);
 
+        function checkWidth() {
+            containerWidth = container.offsetWidth;
+            setParams(containerWidth);
+        }
 
+        function setParams(w) {
+            if (w < 500) {
+                slidesPerPage = 1;
+            } else {
+                if (w < 901) {
+                    slidesPerPage = 2;
+                } else {
+                    if (w < 1500) {
+                        slidesPerPage = 3;
+                    } else {
+                        slidesPerPage = 3;
+                    }
+                }
+            }
+            slidesCount = slides - slidesPerPage;
+            if (currentPosition > slidesCount) {
+                currentPosition -= slidesPerPage;
+            };
+            currentMargin = - currentPosition * (100 / slidesPerPage);
+            slider.style.marginLeft = currentMargin + '%';
+            if (currentPosition > 0) {
+                buttons[0].classList.remove('inactive');
+            }
+            if (currentPosition < slidesCount) {
+                buttons[1].classList.remove('inactive');
+            }
+            if (currentPosition >= slidesCount) {
+                buttons[1].classList.add('inactive');
+            }
+        }
+
+        setParams();
+
+        function slideRight() {
+            if (currentPosition != 0) {
+                slider.style.marginLeft = currentMargin + (100 / slidesPerPage) + '%';
+                currentMargin += (100 / slidesPerPage);
+                currentPosition--;
+            };
+            if (currentPosition === 0) {
+                buttons[0].classList.add('inactive');
+            }
+            if (currentPosition < slidesCount) {
+                buttons[1].classList.remove('inactive');
+            }
+        };
+
+        function slideLeft() {
+            if (currentPosition != slidesCount) {
+                slider.style.marginLeft = currentMargin - (100 / slidesPerPage) + '%';
+                currentMargin -= (100 / slidesPerPage);
+                currentPosition++;
+            };
+            if (currentPosition == slidesCount) {
+                buttons[1].classList.add('inactive');
+            }
+            if (currentPosition > 0) {
+                buttons[0].classList.remove('inactive');
+            }
+        };
+    </script>
 </div>
 @endsection

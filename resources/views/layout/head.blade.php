@@ -18,20 +18,39 @@
         @vite([
               //choices.js
            'resources/libs/tiny-slider/tiny-slider.css',
-           'resources/tobii/css/tobii.min.css',
-           'resources/libs/choices.js/public/assets/styles/choices.min.css',
-            'resources/cssx/icons.css',
+          'resources/libs/tobii/css/tobii.min.css',
+          'resources/libs/choices.js/public/assets/styles/choices.min.css',
+          'resources/libs/@iconscout/unicons/css/line.css',
+          'resources/cssx/icons.css',
+          'resources/cssx/soon.css',
+            'resources/cssx/cox.css',
             'resources/cssx/tailwind.min.css',
-            'resources/libs/@iconscout/unicons/css/line.css',
             'resources/libs/particles.js/particles.js',
             'resources/libs/feather-icons/feather.min.js',
-            'resources/js/appx.js',
             'resources/js/plugins.init.js',
+            'resources/js/appx.js',
             'resources/libs/tiny-slider/min/tiny-slider.js',
             'resources/libs/tobii/js/tobii.min.js',
             'resources/libs/choices.js/public/assets/scripts/choices.min.js',
-
             ])
+
+            {{--  <link href="assets/libs/tiny-slider/tiny-slider.css" rel="stylesheet">
+            <link href="assets/libs/tobii/css/tobii.min.css" rel="stylesheet">
+            <link href="assets/libs/choices.js/public/assets/styles/choices.min.css" rel="stylesheet">
+            <!-- Main Css -->
+            <link href="assets/libs/%40iconscout/unicons/css/line.css" type="text/css" rel="stylesheet" />
+            <link rel="stylesheet" href="assets/css/icons.css" />
+            <link rel="stylesheet" href="assets/css/tailwind.min.css" />  --}}
+
+
+            {{--  <!-- JAVASCRIPTS -->
+            <script src="assets/libs/tiny-slider/min/tiny-slider.js"></script>
+            <script src="assets/libs/tobii/js/tobii.min.js"></script>
+            <script src="assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
+            <script src="assets/libs/feather-icons/feather.min.js"></script>
+            <script src="assets/js/plugins.init.js"></script>
+            <script src="assets/js/app.js"></script>
+            <!-- JAVASCRIPTS -->  --}}
     </head>
     <body class="dark:bg-slate-900">
         <nav id="topnav" class="defaultscroll is-sticky">
@@ -100,6 +119,37 @@
                         <li><a href="contact.html" class="sub-menu-item">Contact</a></li>
                     </ul><!--end navigation menu-->
                 </div><!--end navigation-->
+            </div>
+
+            <div class="google sm:google md:hidden lg:hidden goxx" style="display:none;">
+                <article class="w-10/12 h-full bg-white  float-right " >
+                    <div class="w-full m-auto flex flex-col ">
+                        <aside class=' float-right flex flex-row items-center justify-center py-4 '>
+                             <button class='w-6 h-6  rounded-full bg-white text-green-700 text-center text-2xl font-extrabold m-auto mr-4 btnx' >x</button>
+                         </aside>
+
+                         <section class="w-full">
+                            <ul class="w-full gap-3 flex flex-col ">
+                                <li class="px-3 capitalize text-2xl py-2 text-green-700 hover:bg-green-500 hover:text-white">
+                                    <a href="" class="" style="">Home</a>
+
+                                </li>
+
+                                <li class="px-3 capitalize text-2xl py-2 text-green-700 hover:bg-green-500 hover:text-white">
+                                    <a href="" >About</a>
+                                </li>
+
+                                <li class="px-3 capitalize text-2xl py-2 text-green-700 hover:bg-green-500 hover:text-white">
+                                    <a href=""  >Contact</a></li>
+
+
+                                    <li class="px-3 capitalize text-2xl py-2 text-green-700 hover:bg-green-500 hover:text-white">
+                                        <a href=""  >More</a></li>
+
+                            </ul>
+                         </section>
+                         </div>
+
             </div>
         </nav><!--end header-->
 
@@ -177,6 +227,22 @@
              //   message.style.color = "red"
           //  }
          })
+
+     })
+
+
+     let btnx = document.querySelector(".btnx")
+     let goxx = document.querySelector(".goxx")
+    let isToggle = document.getElementById("isToggle")
+     btnx.addEventListener("click", function(e) {
+        e.preventDefault();
+        goxx.style.display = "none";
+
+     })
+
+     isToggle.addEventListener("click", function(e) {
+        e.preventDefault();
+        goxx.style.display = "block";
 
      })
     </script>
