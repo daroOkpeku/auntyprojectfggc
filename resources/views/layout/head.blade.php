@@ -29,6 +29,7 @@
             'resources/libs/feather-icons/feather.min.js',
             'resources/js/plugins.init.js',
             'resources/js/appx.js',
+            'resources/js/leaderpic.js',
             'resources/libs/tiny-slider/min/tiny-slider.js',
             'resources/libs/tobii/js/tobii.min.js',
             'resources/libs/choices.js/public/assets/scripts/choices.min.js',
@@ -156,13 +157,13 @@
 
 
         <section class="relative table w-full py-36 lg:py-44 overflow-hidden zoom-image">
-            <div class="absolute inset-0 image-wrap z-1 bg-[url('https://res.cloudinary.com/okpeku/image/upload/v1682330129/dinu-j-nair-fzFZCJTyoTo-unsplash_wldjgc.jpg')] bg-no-repeat bg-center bg-cover"></div>
+            <div class="absolute inset-0 image-wrap z-1 bg-[url('https://res.cloudinary.com/dao2m5pub/image/upload/v1684927124/photo%20of%20chapters/Dallas_1_of6ufc.jpg')] bg-no-repeat bg-center bg-cover"></div>
             <div class="absolute inset-0 bg-black/70 z-2"></div>
             <div class="container z-3">
                 <div class="grid grid-cols-1 mt-10">
                     <div class="text-center">
-                        <h1 class="font-bold text-white lg:leading-normal leading-normal text-4xl lg:text-5xl mb-6">Easy way to find your <br> dream property</h1>
-                        <p class="text-white/70 text-xl max-w-xl mx-auto">A great plateform to buy, sell and rent your properties without any agent or commisions.</p>
+                        <h1 class="font-bold text-white lg:leading-normal leading-normal text-4xl lg:text-5xl mb-6 capitalize">we are one big family,  <br>mentoring, educating, uplifting, loving</h1>
+                        <p class="text-white/70 text-xl max-w-xl mx-auto captalize">caring and just giving of ourselves to the course of humanity.</p>
                     </div>
 
 

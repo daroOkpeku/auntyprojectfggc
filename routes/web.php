@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\authContoller;
 use App\Http\Controllers\viewController;
+use Illuminate\Broadcasting\Channel;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -33,7 +34,9 @@ Route::get('/traveldetails', [viewController::class, 'travel']);
 Route::post('/travelin', [viewController::class, 'travelin']);
 Route::post('/adminlogin',  [authContoller::class, 'adminlogin']);
 Route::get('/adminlogin', [viewController::class, 'adminloginview'])->name('adminloginview');
-
+Route::get('/chapterdetails', [viewController::class, 'aboutus'])->name('chapterdetails');
+Route::get('/about', [viewController::class, 'about'])->name('about');
+Route::get('/chapter', [viewController::class, 'chapter'])->name('chapter');
 Route::group(['middleware' => ['adminmiddlee:admin']], function () {
 Route::get('/admindashboard', [viewController::class, 'admindashboard'])->name('admindashboard');
 Route::get('/registrants', [viewController::class, 'Registrants']);

@@ -151,6 +151,21 @@ class viewController extends Controller
     }
 
 
+    public function aboutus(){
+        return view('chapterdetails');
+    }
+
+
+    public function chapter(){
+        return view('chapter');
+    }
+
+    public function about(){
+
+        return view('aboutus');
+    }
+
+
 }
 
 

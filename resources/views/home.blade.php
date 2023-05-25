@@ -6,24 +6,30 @@
             <div class="grid md:grid-cols-12 grid-cols-1 items-center gap-[30px]">
                 <div class="md:col-span-5">
                     <div class="relative">
-                        <img src="https://res.cloudinary.com/okpeku/image/upload/v1634906635/samples/bike.jpg" class="rounded-xl shadow-md" alt="">
-                        <div class="absolute bottom-2/4 translate-y-2/4 right-0 left-0 text-center">
-                            {{--  <a href="#!" data-type="youtube" data-id="yba7hPeTSjk"
-                                class="lightbox h-20 w-20 rounded-full shadow-md dark:shadow-gyay-700 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-green-600">
-                                <i class="mdi mdi-play inline-flex items-center justify-center text-2xl"></i>
-                            </a>  --}}
+                        <img src="https://res.cloudinary.com/dao2m5pub/image/upload/v1684938784/photo%20of%20blog%20writers/Uloama_Umeano_isk3kd.jpg" class="rounded-xl shadow-md" alt="">
+                        <div class="absolute bottom-2/4 translate-y-2/4 right-0 left-0 text-center ">
+                           <span class="w-11/12 text-center border border-white text-white rounded-md px-4 py-2   text-lg sm:text-lg md:text-4xl lg:text-4xl">
+                            Urenna Iheme
+                           </span>
                         </div>
                     </div>
                 </div><!--end col-->
 
                 <div class="md:col-span-7">
                     <div class="ltr:lg:ml-4 rtl:lg:mr-4">
-                        <h4 class="mb-6 md:text-3xl text-2xl lg:leading-normal leading-normal font-semibold">Efficiency. Transparency. <br> Control.</h4>
-                        <p class="text-slate-400 max-w-xl">Hously developed a platform for the Real Estate marketplace that allows buyers and sellers to easily execute a transaction on their own. The platform drives efficiency, cost transparency and control into the hands of the consumers. Hously is Real Estate Redefined.</p>
+                        <h4 class="mb-6 md:text-3xl text-2xl lg:leading-normal leading-normal font-semibold">EMPOWERED TO BE A BLESSING <br>TO HER WORLD</h4>
+                        <p class="text-slate-400 max-w-xl">
+                            She is the teacher that teaches and delights in seeing her students learn and improve overall; She is the doctor that works with all her heart, always putting her patients first; She is the public servant that works by the rules and upholds the tenets of her industry. Yes, she is the woman that may sometimes be misunderstood for her uprightness, entrepreneurship, diligence, depth and yet a very sweet and soft personality.
+                             She runs as if against time, giving of herself to everyone, and bringing healing to her world. Seeing the girl child grow into a wholesome lady is her oxygen: any deviation from this especially resulting from abuse cuts her so deeply. A builder, a nurturer, a mender, a preserver; she is the epitome of a gifted woman.
+                            Federal Government Girls College Owerri Old Girls Association formally established in 2012 is home to this amazing woman. With chapters spread across the globe, and an unprecedented growth in strength and numbers, we are one big family, mentoring, educating, uplifting, loving, caring and just giving of ourselves to the course of humanity.
+                            I welcome you to a beautiful, engaging, interesting and user friendly website. Come let me take you through our beautiful journeys. This is the best sisterhood in the world!
+                            Welcome
+                            Pro Unitate
+                        </p>
 
-                        <div class="mt-4">
+                        {{--  <div class="mt-4">
                             <a href="#" class="btn bg-green-600 hover:bg-green-700 text-white rounded-md mt-3">Learn More </a>
-                        </div>
+                        </div>  --}}
                     </div>
                 </div><!--end col-->
             </div><!--end grid-->
@@ -494,89 +500,115 @@
 
         {{--  slide show  --}}
         <section class="w-full flex flex-col items-center">
-                     <div class="w-1/3 text-center text-4xl font-medium underline capitalize m-auto">our feedback</div>
+                     <div class="w-1/3 text-center text-4xl font-medium underline capitalize m-auto">our leaders</div>
                      <div id="container">
                         <div id="slider-container">
                           <span onclick="slideRight()" class="btn"></span>
-                            <div id="slider">
+                            <div id="slider"  >
 
-                              <div class="slide rounded-md shadow-md flex flex-col items-center py-1 px-1 ">
-                                <div class="w-full h-50">
-                                    <img src="https://res.cloudinary.com/okpeku/image/upload/v1682019361/roman-skrypnyk-gjA24divsqw-unsplash_zsi259.jpg" class="w-full h-full object-cover" />
-                                </div>
-                                <section class="w-full flex flex-col px-2">
-                                    <div class="w-1/2 float-left text-base text-left capitalize">Stephen Okpeku</div>
-                                    <section class="w-full text-left font-semibold">
-                                        In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to
-                                        demonstrate the visual form of a document or a typeface without relying on meaningful content.
-                                        Lorem ipsum may be used as a placeholder before final copy is available
+                                <div class="slide rounded-md shadow-md flex flex-col items-center py-1 px-1 ">
+                                    <div class="w-full h-50" style="height:400px;">
+                                        <img src="https://res.cloudinary.com/dao2m5pub/image/upload/v1684938785/photo%20of%20blog%20writers/Reama_George_2_redacp.jpg" class="w-full h-full object-cover" />
+                                    </div>
+                                    <section class="w-full flex flex-col px-2">
+                                        <div class="w-1/2 float-left text-base text-left capitalize">Reama George</div>
+                                        <section class="w-full text-left font-semibold">
+                                            National Public Relations Officer
+                                        </section>
                                     </section>
-                                </section>
-                              </div>
-
-                              <div class="slide rounded-md shadow-md flex flex-col items-center py-1 px-1 ">
-                                <div class="w-full h-50">
-                                    <img src="https://res.cloudinary.com/okpeku/image/upload/v1682019361/roman-skrypnyk-gjA24divsqw-unsplash_zsi259.jpg" class="w-full h-full object-cover" />
-                                </div>
-                                <section class="w-full flex flex-col px-2">
-                                    <div class="w-1/2 float-left text-base text-left capitalize">Stephen Okpeku</div>
-                                    <section class="w-full text-left font-semibold">
-                                        In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to
-                                        demonstrate the visual form of a document or a typeface without relying on meaningful content.
-                                        Lorem ipsum may be used as a placeholder before final copy is available
-                                    </section>
-                                </section>
-                              </div>
-
-                              <div class="slide rounded-md shadow-md flex flex-col items-center py-1 px-1 ">
-                                <div class="w-full h-50">
-                                    <img src="https://res.cloudinary.com/okpeku/image/upload/v1682019361/roman-skrypnyk-gjA24divsqw-unsplash_zsi259.jpg" class="w-full h-full object-cover" />
-                                </div>
-                                <section class="w-full flex flex-col px-2">
-                                    <div class="w-1/2 float-left text-base text-left capitalize">Stephen Okpeku</div>
-                                    <section class="w-full text-left font-semibold">
-                                        In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to
-                                        demonstrate the visual form of a document or a typeface without relying on meaningful content.
-                                        Lorem ipsum may be used as a placeholder before final copy is available
-                                    </section>
-                                </section>
-                              </div>
+                                    </div>
 
 
-                              <div class="slide rounded-md shadow-md flex flex-col items-center py-1 px-1 ">
-                                <div class="w-full h-50">
-                                    <img src="https://res.cloudinary.com/okpeku/image/upload/v1682019361/roman-skrypnyk-gjA24divsqw-unsplash_zsi259.jpg" class="w-full h-full object-cover" />
-                                </div>
-                                <section class="w-full flex flex-col px-2">
-                                    <div class="w-1/2 float-left text-base text-left capitalize">Stephen Okpeku</div>
-                                    <section class="w-full text-left font-semibold">
-                                        In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to
-                                        demonstrate the visual form of a document or a typeface without relying on meaningful content.
-                                        Lorem ipsum may be used as a placeholder before final copy is available
-                                    </section>
-                                </section>
-                              </div>
-{{--
-                              <div class="slide rounded-md shadow-md flex flex-col items-center py-1 px-1 ">
-                                <div class="w-full h-50">
-                                    <img src="https://res.cloudinary.com/okpeku/image/upload/v1682019361/roman-skrypnyk-gjA24divsqw-unsplash_zsi259.jpg" class="w-full h-full object-cover" />
-                                </div>
-                                <section class="w-full flex flex-col px-2">
-                                    <div class="w-1/2 float-left text-base text-left capitalize">Stephen Okpeku</div>
-                                    <section class="w-full text-left font-semibold">
-                                        In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to
-                                        demonstrate the visual form of a document or a typeface without relying on meaningful content.
-                                        Lorem ipsum may be used as a placeholder before final copy is available
-                                    </section>
-                                </section>
-                              </div>  --}}
+                                    <div class="slide rounded-md shadow-md flex flex-col items-center py-1 px-1 ">
+                                        <div class="w-full h-50" style="height:400px;">
+                                            <img src="https://res.cloudinary.com/dao2m5pub/image/upload/v1684938784/photo%20of%20blog%20writers/Nkiruka_Nwachukwu_President_weqfhg.jpg" class="w-full h-full object-cover" />
+                                        </div>
+                                        <section class="w-full flex flex-col px-2">
+                                            <div class="w-1/2 float-left text-base text-left capitalize">Nkiru Nwachukwu</div>
+                                            <section class="w-full text-left font-semibold">
+                                                Ex-Officio
+                                            </section>
+                                        </section>
+                                        </div>
+
+                                        <div class="slide rounded-md shadow-md flex flex-col items-center py-1 px-1 ">
+                                            <div class="w-full h-50" style="height:400px;">
+                                                <img src='https://res.cloudinary.com/dao2m5pub/image/upload/v1684948587/photo%20of%20excos/Carol_Asikpo-Edet_bwwaeb.jpg' class="w-full h-full object-cover" />
+                                            </div>
+                                            <section class="w-full flex flex-col px-2">
+                                                <div class="w-1/2 float-left text-base text-left capitalize">Carol Asikpo-Edet</div>
+                                                <section class="w-full text-left font-semibold">
+
+                                                    Vice President South-South
+                                                </section>
+                                            </section>
+                                            </div>
 
 
-                              {{--  <div class="slide"><span>6</span></div>
-                              <div class="slide"><span>7</span></div>
-                              <div class="slide"><span>8</span></div>
-                              <div class="slide"><span>9</span></div>
-                              <div class="slide"><span>10</span></div>  --}}
+                                            <div class="slide rounded-md shadow-md flex flex-col items-center py-1 px-1 ">
+                                                <div class="w-full h-50" style="height:400px;">
+                                                    <img src="https://res.cloudinary.com/dao2m5pub/image/upload/v1684948593/photo%20of%20excos/Francisca_Mbanaja-Opara_pjqnhy.jpg" class="w-full h-full object-cover" />
+                                                </div>
+                                                <section class="w-full flex flex-col px-2">
+                                                    <div class="w-1/2 float-left text-base text-left capitalize">Francisca Opara</div>
+                                                    <section class="w-full text-left font-semibold">
+
+                                                        Vice President USA
+                                                    </section>
+                                                </section>
+                                                </div>
+
+                                                <div class="slide rounded-md shadow-md flex flex-col items-center py-1 px-1 ">
+                                                    <div class="w-full h-50" style="height:400px;">
+                                                        <img src="https://res.cloudinary.com/dao2m5pub/image/upload/v1684948582/photo%20of%20excos/Adaeze_Angelique_Nwosu_tzcigl.jpg" class="w-full h-full object-cover" />
+                                                    </div>
+                                                    <section class="w-full flex flex-col px-2">
+                                                        <div class="w-1/2 float-left text-base text-left capitalize">Adaeze Ononye-Nwosu</div>
+                                                        <section class="w-full text-left font-semibold">
+
+                                                            Vice President Canada
+                                                        </section>
+                                                    </section>
+                                                    </div>
+
+                                                    <div class="slide rounded-md shadow-md flex flex-col items-center py-1 px-1 ">
+                                                        <div class="w-full h-50" style="height:400px;">
+                                                            <img src="https://res.cloudinary.com/dao2m5pub/image/upload/v1684948587/photo%20of%20excos/Ada_kadiri_yivi3g.jpg" class="w-full h-full object-cover" />
+                                                        </div>
+                                                        <section class="w-full flex flex-col px-2">
+                                                            <div class="w-1/2 float-left text-base text-left capitalize">Ada Kadiri</div>
+                                                            <section class="w-full text-left font-semibold">
+
+                                                                National Secretary
+                                                            </section>
+                                                        </section>
+                                                        </div>
+
+                                                        <div class="slide rounded-md shadow-md flex flex-col items-center py-1 px-1 ">
+                                                            <div class="w-full h-50" style="height:400px;">
+                                                                <img src="https://res.cloudinary.com/dao2m5pub/image/upload/v1684948585/photo%20of%20excos/Akwaugo_Nsofor_iqep1g.jpg" class="w-full h-full object-cover" />
+                                                            </div>
+                                                            <section class="w-full flex flex-col px-2">
+                                                                <div class="w-1/2 float-left text-base text-left capitalize">Akwaugo Nsofor </div>
+                                                                <section class="w-full text-left font-semibold">
+                                                                    National Welfare Officer
+
+                                                                </section>
+                                                            </section>
+                                                            </div>
+
+                                                            <div class="slide rounded-md shadow-md flex flex-col items-center py-1 px-1 ">
+                                                                <div class="w-full h-50" style="height:400px;">
+                                                                    <img src="https://res.cloudinary.com/dao2m5pub/image/upload/v1684948611/photo%20of%20excos/Nnenna_Eje_Nwachukwu_w7zj9t.jpg" class="w-full h-full object-cover" />
+                                                                </div>
+                                                                <section class="w-full flex flex-col px-2">
+                                                                    <div class="w-1/2 float-left text-base text-left capitalize">Nnenna Amechi </div>
+                                                                    <section class="w-full text-left font-semibold">
+
+                                                                        National Financial Secretary
+                                                                    </section>
+                                                                </section>
+                                                                </div>
 
                           </div>
                           <span onclick="slideLeft()" class="btn"></span>
@@ -738,7 +770,7 @@
                 if (w < 901) {
                     slidesPerPage = 2;
                 } else {
-                    if (w < 1500) {
+                    if (w < 1265) {
                         slidesPerPage = 3;
                     } else {
                         slidesPerPage = 3;
