@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Events\contactevent;
+use App\Http\Requests\contactreq;
+use App\Models\contact;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
@@ -20,5 +23,15 @@ class Controller extends BaseController
         $offset = ($currentpage * $perPage) - $perPage ;
         $itemstoshow = array_slice($items , $offset , $perPage);
         return new LengthAwarePaginator($itemstoshow ,$total ,$perPage);
+    }
+
+    public function contacts(contactreq $request){
+       contact::create([
+        'name'=>$request->name,
+        'email'=>$request->email,
+        'comments'=>$request->comments,
+       ]);
+        event( new contactevent($request->name, $request->email, $request->comments ) );
+       return response()->json(['success'=>'we have seen your information']);
     }
 }

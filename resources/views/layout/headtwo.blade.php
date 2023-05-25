@@ -75,29 +75,23 @@
                         <!-- Navigation Menu-->
                         <ul class="navigation-menu justify-end nav-light">
                             <li class="has-submenu parent-menu-item">
-                                <a href="javascript:void(0)">Home</a><span class="menu-arrow"></span>
+                                <a href="{{ route('home') }}">Home</a></span>
 
                             </li>
 
-                            <li><a href="buy.html" class="sub-menu-item">Buy</a></li>
+                            <li><a href="" class="sub-menu-item">Buy</a></li>
 
-                            <li><a href="sell.html" class="sub-menu-item">Sell</a></li>
+                            <li><a href="{{ route('chapters') }}" class="sub-menu-item">Chapters</a></li>
 
                             <li class="has-submenu parent-parent-menu-item">
-                                <a href="javascript:void(0)">Listing</a><span class="menu-arrow"></span>
+                                <a href="{{ route('about') }}">Aboutus</a>
                             </li>
 
                             <li class="has-submenu parent-parent-menu-item">
-                                <a href="javascript:void(0)">Pages</a><span class="menu-arrow"></span>
-                                <ul class="submenu">
-                                    <li><a href="aboutus.html" class="sub-menu-item">About Us</a></li>
-                                    <li><a href="features.html" class="sub-menu-item">Featues</a></li>
-                                    <li><a href="pricing.html" class="sub-menu-item">Pricing</a></li>
-                                    <li><a href="faqs.html" class="sub-menu-item">Faqs</a></li>
-                                </ul>
+                                <a href="">Pages</a>
                             </li>
 
-                            <li><a href="contact.html" class="sub-menu-item">Contact</a></li>
+                            <li><a href="{{ route('contact') }}" class="sub-menu-item">Contact</a></li>
                         </ul><!--end navigation menu-->
                     </div><!--end navigation-->
                 </div>
@@ -112,20 +106,20 @@
                              <section class="w-full">
                                 <ul class="w-full gap-3 flex flex-col ">
                                     <li class="px-3 capitalize text-2xl py-2 text-green-700 hover:bg-green-500 hover:text-white">
-                                        <a href="" class="" style="">Home</a>
+                                        <a href="{{ route('home') }}" class="" style="">Home</a>
 
                                     </li>
 
                                     <li class="px-3 capitalize text-2xl py-2 text-green-700 hover:bg-green-500 hover:text-white">
-                                        <a href="" >About</a>
+                                        <a href="{{ route('chapters') }}" >Chapter</a>
                                     </li>
 
                                     <li class="px-3 capitalize text-2xl py-2 text-green-700 hover:bg-green-500 hover:text-white">
-                                        <a href=""  >Contact</a></li>
+                                        <a href="{{ route('about') }}"  >About us</a></li>
 
 
                                         <li class="px-3 capitalize text-2xl py-2 text-green-700 hover:bg-green-500 hover:text-white">
-                                            <a href=""  >More</a></li>
+                                            <a href="{{ route('contact') }}"  >Contact</a></li>
 
                                 </ul>
                              </section>

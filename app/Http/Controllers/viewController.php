@@ -165,6 +165,13 @@ class viewController extends Controller
         return view('aboutus');
     }
 
+    public function member(){
+        return view('member');
+    }
+
+    public function contact(){
+        return view('contact');
+    }
 
 }
 
