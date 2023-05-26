@@ -30,7 +30,12 @@
             'resources/libs/tobii/js/tobii.min.js',
             'resources/libs/choices.js/public/assets/scripts/choices.min.js',
             'resources/js/chapter.js',
-            'resources/js/about.js'
+            'resources/js/about.js',
+
+            'resources/css/tailwind.css',
+            'resources/css/icofont.css',
+            'resources/css/prestroke.css',
+            'resources/js/infogallery.js'
             ])
         </head>
         <body class="dark:bg-slate-900">
@@ -79,8 +84,6 @@
 
                             </li>
 
-                            <li><a href="" class="sub-menu-item">Buy</a></li>
-
                             <li><a href="{{ route('chapters') }}" class="sub-menu-item">Chapters</a></li>
 
                             <li class="has-submenu parent-parent-menu-item">
@@ -88,10 +91,13 @@
                             </li>
 
                             <li class="has-submenu parent-parent-menu-item">
-                                <a href="">Pages</a>
+                                <a href="{{ route('gallery') }}">Gallery</a>
                             </li>
 
                             <li><a href="{{ route('contact') }}" class="sub-menu-item">Contact</a></li>
+
+                        <li><a href="{{ route('member') }}" class="sub-menu-item">Member</a></li>
+
                         </ul><!--end navigation menu-->
                     </div><!--end navigation-->
                 </div>
@@ -117,6 +123,12 @@
                                     <li class="px-3 capitalize text-2xl py-2 text-green-700 hover:bg-green-500 hover:text-white">
                                         <a href="{{ route('about') }}"  >About us</a></li>
 
+                                        <li class="px-3 capitalize text-2xl py-2 text-green-700 hover:bg-green-500 hover:text-white">
+                                            <a href="{{ route('gallery') }}"  >Gallery</a></li>
+
+
+                                            <li class="px-3 capitalize text-2xl py-2 text-green-700 hover:bg-green-500 hover:text-white">
+                                                <a href="{{ route('member') }}"  >Member</a></li>
 
                                         <li class="px-3 capitalize text-2xl py-2 text-green-700 hover:bg-green-500 hover:text-white">
                                             <a href="{{ route('contact') }}"  >Contact</a></li>

@@ -155,7 +155,6 @@ group.forEach((one)=>{
 
 prev.addEventListener("click", function(e){
     e.preventDefault();
-      console.log(currentPage)
      if(currentPage > 1){
        let total = currentPage --;
        current.innerText = total

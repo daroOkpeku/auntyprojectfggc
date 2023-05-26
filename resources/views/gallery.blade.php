@@ -6,50 +6,34 @@
         <div class="absolute inset-0 bg-black opacity-80"></div>
         <div class="container">
             <div class="grid grid-cols-1 text-center mt-10">
-                <h3 class="md:text-4xl text-3xl md:leading-normal leading-normal font-medium text-white">Chapters</h3>
+                <h3 class="md:text-4xl text-3xl md:leading-normal leading-normal font-medium text-white">Gallery</h3>
+                <h3 class="md:text-4xl text-3xl md:leading-normal leading-normal font-medium text-white housex"></h3>
+
             </div>
         </div>
     </section>
     <!--end section-->
 
 
+    <!-- shuffle portfolio -->
+            <div class="flex justify-center mt-6">
+                <div class="w-full filters-group-wrap mb-3">
+                    <div class="flex justify-center mb-5">
+                        <ul class="filter-options grid grid-cols-2 sm:grid sm:grid-cols-3  md:grid md:grid-cols-3 lg:flex lg:flex-wrap gap-4 justify-center dogx">
 
-
-    <section class="relative lg:py-24 py-16">
-        <div class="container">
-            <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[30px] cardx">
-   {{-- <div class=" group rounded-xl bg-white dark:bg-slate-900 shadow hover:shadow-xl dark:hover:shadow-xl dark:shadow-gray-700 dark:hover:shadow-gray-700 overflow-hidden ease-in-out duration-500">
-                    <div class="relative">
-                        <img src="assets/images/property/12.jpg" alt="">
-
-                        <div class="absolute top-4 ltr:right-4 rtl:left-4">
-                            <a href="javascript:void(0)" class="btn btn-icon bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-full text-slate-100 dark:text-slate-700 focus:text-red-600 dark:focus:text-red-600 hover:text-red-600 dark:hover:text-red-600"></a>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <div class="pb-6">
-                            <a href="property-detail.html" class="text-lg hover:text-green-600 font-medium ease-in-out duration-500">10765 Hillshire Ave, Baton Rouge, LA 70810, USA</a>
-                        </div>
-
-                        <ul class="py-6 border-y border-slate-100 dark:border-gray-800 flex items-center list-none">
-                            <li class="flex items-center ltr:mr-4 rtl:ml-4">
-                                <span>8000sqf</span>
-                            </li>
-                        </ul>
-
-                        <ul class=" flex justify-between items-center list-none">
-                            <li>
-                                <p class="text-lg font-medium">$5000</p>
-                            </li>
                         </ul>
                     </div>
-                </div>  --}}
+                </div>
+                <!--end /div-->
+            </div>
+            <!--end /div-->
+
+            <section class="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3  gap-6 place-items-center px-2 py-2 alldata">
 
 
 
 
-
-            </div><!--en grid-->
+            </section>
 
             <div class="grid md:grid-cols-12 grid-cols-1 mt-8">
                 <div class="md:col-span-12 text-center">
@@ -74,12 +58,26 @@
                 </div>
             </div>
 
-        </div><!--end container-->
-    </section><!--end section-->
-    <!-- End -->
 
 
 
+            <article class="showxy pop  " style="display:none;" >
 
+                <section class="bg-white w-11/12 sm:w-11/12  md:w-10/12 lg:w-10/12 flex flex-col item-center  justify-center rounded-md"  >
+                    <div class="w-full m-auto ">
+                        <aside class=' float-right flex flex-row items-center justify-center py-4 '>
+                             <button class='w-6 h-6  rounded-full bg-white text-blue-500 text-center text-lg font-extrabold m-auto mr-4 closex' >x</button>
+                         </aside>
+                         </div>
+                         <div class="w-full h-[36rem] m-auto flex justify-center items-center overflow-y-scroll">
+
+                            <img src="" class="w-11/12 h-full imgx  object-cover"/>
+
+                         </div>
+
+                </section>
+
+
+                </article>
 </div>
 @endsection

@@ -173,6 +173,10 @@ class viewController extends Controller
         return view('contact');
     }
 
+
+    public function gallery(){
+        return view('gallery');
+    }
 }
 
 

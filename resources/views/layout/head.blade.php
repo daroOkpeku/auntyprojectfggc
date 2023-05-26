@@ -100,8 +100,6 @@
 
                         </li>
 
-                        <li><a href="" class="sub-menu-item">Buy</a></li>
-
                         <li><a href="{{ route('chapters') }}" class="sub-menu-item">Chapters</a></li>
 
                         <li class="has-submenu parent-parent-menu-item">
@@ -109,10 +107,13 @@
                         </li>
 
                         <li class="has-submenu parent-parent-menu-item">
-                            <a href="">Pages</a>
+                            <a href="{{ route('gallery') }}">Gallery</a>
                         </li>
 
                         <li><a href="{{ route('contact') }}" class="sub-menu-item">Contact</a></li>
+
+                    <li><a href="{{ route('member') }}" class="sub-menu-item">Member</a></li>
+
                     </ul><!--end navigation menu-->
                 </div><!--end navigation-->
             </div>
@@ -138,6 +139,12 @@
                                 <li class="px-3 capitalize text-2xl py-2 text-green-700 hover:bg-green-500 hover:text-white">
                                     <a href="{{ route('about') }}"  >About us</a></li>
 
+                                    <li class="px-3 capitalize text-2xl py-2 text-green-700 hover:bg-green-500 hover:text-white">
+                                        <a href="{{ route('gallery') }}"  >Gallery</a></li>
+
+
+                                        <li class="px-3 capitalize text-2xl py-2 text-green-700 hover:bg-green-500 hover:text-white">
+                                            <a href="{{ route('member') }}"  >Member</a></li>
 
                                     <li class="px-3 capitalize text-2xl py-2 text-green-700 hover:bg-green-500 hover:text-white">
                                         <a href="{{ route('contact') }}"  >Contact</a></li>

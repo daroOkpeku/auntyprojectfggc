@@ -28,6 +28,8 @@ Route::get('confirmation/{code}', [viewController::class, 'confirmation']);
 // Route::get('/login', [viewController::class, 'login'])->name('login');
 // Route::post('/login', [authContoller::class, 'login']);
 Route::post('/check', [viewController::class, 'check']);
+Route::get('/gallery', [viewController::class, 'gallery'])->name('gallery');
+
 Route::get('/accommodation', [viewController::class, 'accommodation']);
 Route::post('/accommdate', [viewController::class, 'accommdate']);
 Route::get('/checkaccommodation/{id}', [viewController::class, 'checkaccommodation']);
@@ -41,6 +43,7 @@ Route::get('/chapters', [viewController::class, 'chapter'])->name('chapters');
 Route::get('/member', [viewController::class, 'member'])->name('member');
 Route::get('/contact', [viewController::class, 'contact'])->name('contact');
 Route::post('contact', [Controller::class, 'contacts']);
+
 Route::group(['middleware' => ['adminmiddlee:admin']], function () {
 Route::get('/admindashboard', [viewController::class, 'admindashboard'])->name('admindashboard');
 Route::get('/registrants', [viewController::class, 'Registrants']);

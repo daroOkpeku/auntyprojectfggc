@@ -17,8 +17,8 @@
     <!-- Start Section-->
     <section class="relative lg:py-24 py-16">
         <div class="container">
-            <div class="grid md:grid-cols-12 grid-cols-1 items-center gap-[30px]">
-                <div class="lg:col-span-7 md:col-span-6">
+            <div class="flex flex-col items-center items-center sm:flex sm:flex-col sm:items-center   md:flex md:flex-row md:items-center md:items-center lg:flex lg:flex-row lg:items-center lg:items-center gap-[30px]">
+                <div class=" md:col-span-7 md:block lg:col-span-7 lg:block">
                     <img src="https://res.cloudinary.com/okpeku/image/upload/v1655387554/newimage/help_sjxcxg.png" alt="">
                 </div>
 
