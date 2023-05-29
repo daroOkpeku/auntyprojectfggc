@@ -37,6 +37,7 @@ let currentPage = 1;
       const indexofLastPost =  currentPage * numberOfRow;
       const indexofFirstPost = indexofLastPost - numberOfRow;
       const ansdata = unqiuefilter?.slice(indexofFirstPost, indexofLastPost);
+      current.innerText = 1;
       let ansinto = ansdata.map((item)=>{
         return `  <section class="w-96 h-75 rounded-sm shadow-md relative bg-black bg-opacity-20 picx">
         <img src="${item.picture}" class="w-full h-full object-cover picx"/>

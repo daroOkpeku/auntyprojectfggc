@@ -88,14 +88,28 @@ class viewController extends Controller
 
     public function travelin(travelreq $request){
              $ans = $request->pickup == true?1:0;
-     $travel =  travel::create([
-        "date_arrival"=>Carbon::parse($request->date_arrival),
-        "pickup"=>$ans,
-        "port_part"=>$request->port_part,
-        "time_arrival"=>Carbon::parse($request->time_arrival),
-        "user_id"=>$request->user_id
-       ]);
-       return response()->json(['success'=>'Thank you for completing the form', 'data'=>$travel]);
+      $check = travel::where(['user_id'=>$request->user_id])->first();
+      if(!$check){
+        $travel =  travel::create([
+            "date_arrival"=>Carbon::parse($request->date_arrival),
+            "pickup"=>$ans,
+            "port_part"=>$request->port_part,
+            "time_arrival"=>Carbon::parse($request->time_arrival),
+            "user_id"=>$request->user_id
+           ]);
+           return response()->json(['success'=>'Thank you for completing the form', 'data'=>$travel]);
+
+      }else{
+        return response()->json(['success'=>'you have entered your details ']);
+
+      }
+    }
+
+    public function checktravelin($id){
+        $travelcheck = travel::where(['user_id'=>$id])->first();
+        if($travelcheck){
+           return response()->json(['success'=>$travelcheck]);
+        }
     }
 
     public function adminloginview(){

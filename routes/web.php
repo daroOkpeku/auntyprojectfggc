@@ -35,6 +35,7 @@ Route::post('/accommdate', [viewController::class, 'accommdate']);
 Route::get('/checkaccommodation/{id}', [viewController::class, 'checkaccommodation']);
 Route::get('/traveldetails', [viewController::class, 'travel']);
 Route::post('/travelin', [viewController::class, 'travelin']);
+Route::get('/checktravelin/{id}', [viewController::class, 'checktravelin']);
 Route::post('/adminlogin',  [authContoller::class, 'adminlogin']);
 Route::get('/adminlogin', [viewController::class, 'adminloginview'])->name('adminloginview');
 Route::get('/chapterdetails', [viewController::class, 'aboutus'])->name('chapterdetails');

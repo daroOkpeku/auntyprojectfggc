@@ -37,13 +37,17 @@
                             <div class="grid grid-cols-1">
                                 <div class="mb-2">
                                     <label class="font-semibold" for="RegisterName">Date of Arrival  :</label>
-                                    <input id="date_arrival" type="date" class="form-input mt-3" />
+                                    <input id="date_arrival" type="date" class="form-input mt-3" style="display:block;" />
+                                    <label class="font-semibold date_arrivalx" style="display:none;" ></label>
+
                                 </div>
 
                                 <div class="mb-2">
                                     <div class="flex items-center w-full mb-0">
                                         <input class="form-checkbox text-green-600 rounded w-4 h-4 ltr:mr-2 rtl:ml-2 border border-inherit" type="checkbox" value="" id="pickup">
                                         <label class="form-check-label text-slate-400" >Would you require pick up and drop off? Yes/No </label>
+                                        <label class="font-semibold" id="pickupx" style="display:none;" ></label>
+
                                     </div>
                                 </div>
 
@@ -56,6 +60,8 @@
                                 <div class="mb-2">
                                     <label class="font-semibold" for="RegisterName">Estimated time of arrival:</label>
                                     <input id="time_arrival" type="date" class="form-input mt-3" />
+                                    <label class="font-semibold" id="time_arrivalx" style="display:none;"></label>
+
                                 </div>
 
                                 <div class="mb-2">
@@ -75,14 +81,17 @@
   <script type="text/javascript">
 
     let date_arrival = document.getElementById("date_arrival")
+    let date_arrivalx = document.querySelector(".date_arrivalx")
     let pickup = document.getElementById("pickup")
+    let pickupx = document.getElementById("pickup")
     let port_part = document.getElementById("port_part")
     let time_arrival = document.getElementById("time_arrival")
+    let time_arrivalx = document.getElementById("time_arrivalx")
     let btn = document.querySelector(".btn")
     var  token = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
     let original = window.location.origin
     let message = document.querySelector(".message")
-
+    let sendme = false;
     let id;
     let local = localStorage.getItem('Accommodation')?localStorage.getItem('Accommodation'):''
     if(local){
@@ -91,63 +100,115 @@
         console.log(decryptedData);
         id = decryptedData.user_id;
 
+        let headers = new Headers();
+        let url = `${original}/checktravelin/${id}`;
+        axios.get(url,  headers).then(res=>{
+           if(res.data.success){
+              console.log(res.data.success);
+               //http://127.0.0.1:8000/storage/images/Screenshot%20(766).png
+                 let datearrival = res.data.success.date_arrival
+                 let pickupz   = res.data.success.pickup
+               let bool = new Date(datearrival)
+               var dd = String(bool.getDate()).padStart(2, '0');
+               var mm = String(bool.getMonth() + 1).padStart(2, '0');
+               var yyyy = bool.getFullYear();
+               let bday = dd+'-'+mm+'-'+yyyy
+
+               //time_arrival
+               let timearrival = res.data.success.time_arrival
+               let boolx = new Date(timearrival)
+               var ddx = String(boolx.getDate()).padStart(2, '0');
+               var mmx = String(bool.getMonth() + 1).padStart(2, '0');
+               var yyyyx = bool.getFullYear();
+               let bdayx = ddx+'-'+mmx+'-'+yyyyx
+
+              //port_part
+              let portpart = res.data.success.port_part
+
+               date_arrival.style.display = "none";
+               date_arrivalx.innerText = bday
+               date_arrivalx.style.display = 'block'
+               pickup.checked = pickupz == 1?true:false;
+
+               sendme = true;
+
+               port_part.value = portpart
+               time_arrival.style.display = "none";
+               time_arrivalx.style.display = 'block';
+               time_arrivalx.innerText = timearrival
+               btn.innerText = 'Back Home';
+
+           }
+        })
+
+
+
     }
+
+
+
 
 
 
     btn.addEventListener("click", function(e) {
         e.preventDefault();
 
-        let headers = new Headers();
-        headers.append('Content-Type', 'application/json')
-        let formData = new FormData();
-        formData.append('date_arrival', date_arrival.value)
-        formData.append('pickup', pickup.checked)
-        formData.append('port_part', port_part.value)
-        formData.append('time_arrival', time_arrival.value)
-        formData.append('user_id', id)
-        formData.append('_token', token)
-        let url = `${original}/travelin`;
-        axios.post(url, formData, headers).then(res=>{
-              console.log(res)
-             if(res.data.success){
-              var ciphertext = CryptoJS.AES.encrypt(JSON.stringify(res.data.data), 'FGGC').toString();
-              localStorage.setItem("travel_detail", ciphertext)
-               message.innerText =  res.data.success
-               message.style.color = "green"
-               btn.innerText = 'Complete'
-               window.scrollBy(0, 0)
-               window.location.href = `${original}`;
-             }
-          }).catch(err=>{
-            //console.log(err.response)
-            let error = err.response.data.errors
-            if(error.date_arrival){
-                message.innerText =  error.date_arrival[0]
-             message.style.color = "red"
-             window.scrollBy(0, 0)
-            }else if(error.pickup){
-                message.innerText =  error.pickup[0]
-                message.style.color = "red"
-                window.scrollBy(0, 0)
-            }else if(error.port_part){
-                message.innerText =  error.port_part[0]
-                message.style.color = "red"
-                window.scrollBy(0, 0)
+        if(sendme){
+          window.location.href = `${original}`;
+        }else{
+            let headers = new Headers();
+            headers.append('Content-Type', 'application/json')
+            let formData = new FormData();
+            formData.append('date_arrival', date_arrival.value)
+            formData.append('pickup', pickup.checked)
+            formData.append('port_part', port_part.value)
+            formData.append('time_arrival', time_arrival.value)
+            formData.append('user_id', id)
+            formData.append('_token', token)
+            let url = `${original}/travelin`;
+            axios.post(url, formData, headers).then(res=>{
+                  console.log(res)
+                 if(res.data.success){
+                  var ciphertext = CryptoJS.AES.encrypt(JSON.stringify(res.data.data), 'FGGC').toString();
+                  localStorage.setItem("travel_detail", ciphertext)
+                   message.innerText =  res.data.success
+                   message.style.color = "green"
+                   btn.innerText = 'Complete'
+                   window.scrollBy(0, 0)
+                   window.location.href = `${original}`;
+                 }
+              }).catch(err=>{
+                //console.log(err.response)
+                let error = err.response.data.errors
+                if(error.date_arrival){
+                    message.innerText =  error.date_arrival[0]
+                 message.style.color = "red"
+                 window.scrollBy(0, 0)
+                }else if(error.pickup){
+                    message.innerText =  error.pickup[0]
+                    message.style.color = "red"
+                    window.scrollBy(0, 0)
+                }else if(error.port_part){
+                    message.innerText =  error.port_part[0]
+                    message.style.color = "red"
+                    window.scrollBy(0, 0)
 
-            }else if(error.time_arrival){
-                message.innerText =  error.time_arrival[0]
-                message.style.color = "red"
-                window.scrollBy(0, 0)
+                }else if(error.time_arrival){
+                    message.innerText =  error.time_arrival[0]
+                    message.style.color = "red"
+                    window.scrollBy(0, 0)
 
-            }else if(error.user_id){
-                message.innerText =  error.user_id[0]
-                message.style.color = "red"
-                window.scrollBy(0, 0)
+                }else if(error.user_id){
+                    message.innerText =  error.user_id[0]
+                    message.style.color = "red"
+                    window.scrollBy(0, 0)
 
-            }
+                }
+              })
 
-          })
+
+        }
+
 
 
     })
