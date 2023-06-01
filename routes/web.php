@@ -44,7 +44,8 @@ Route::get('/chapters', [viewController::class, 'chapter'])->name('chapters');
 Route::get('/member', [viewController::class, 'member'])->name('member');
 Route::get('/contact', [viewController::class, 'contact'])->name('contact');
 Route::post('contact', [Controller::class, 'contacts']);
-
+Route::get('/blog', [viewController::class, 'blog'])->name('blog');
+Route::get('/blogdetail', [viewController::class, 'blogdetail'])->name('blogdetail');
 Route::group(['middleware' => ['adminmiddlee:admin']], function () {
 Route::get('/admindashboard', [viewController::class, 'admindashboard'])->name('admindashboard');
 Route::get('/registrants', [viewController::class, 'Registrants']);

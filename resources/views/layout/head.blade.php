@@ -110,6 +110,10 @@
                             <a href="{{ route('gallery') }}">Gallery</a>
                         </li>
 
+                      <li class="has-submenu parent-parent-menu-item">
+                        <a href="{{ route('blog') }}">Blog</a>
+                    </li>
+
                         <li><a href="{{ route('contact') }}" class="sub-menu-item">Contact</a></li>
 
                     <li><a href="{{ route('member') }}" class="sub-menu-item">Member</a></li>
@@ -141,6 +145,10 @@
 
                                     <li class="px-3 capitalize text-2xl py-2 text-green-700 hover:bg-green-500 hover:text-white">
                                         <a href="{{ route('gallery') }}"  >Gallery</a></li>
+
+
+                                    <li class="px-3 capitalize text-2xl py-2 text-green-700 hover:bg-green-500 hover:text-white">
+                                    <a href="{{ route('blog') }}"  >Blog</a></li>
 
 
                                         <li class="px-3 capitalize text-2xl py-2 text-green-700 hover:bg-green-500 hover:text-white">

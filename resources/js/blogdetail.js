@@ -111,34 +111,25 @@ const Blog = [
 ]
 
 
-let inside = document.querySelector(".inside");
-let orignial = window.location.origin
+const urlSearchParams = new URLSearchParams(window.location.search);
+const params = Object.fromEntries(urlSearchParams.entries());
 
-let ansblog = Blog.map((item)=>{
-
-    return `
-    <div class="group relative h-fit hover:-mt-[5px] overflow-hidden bg-white dark:bg-slate-900 rounded-xl shadow dark:shadow-gray-700 transition-all duration-500">
-    <div class="relative overflow-hidden">
-        <img src="${item.picture}" class="" alt="">
-        <div class="absolute ltr:right-4 rtl:left-4 top-4">
-            <span class="bg-green-600 text-white text-[14px] px-2.5 py-1 font-medium rounded-full h-5">${item.category}</span>
-        </div>
-    </div>
-
-    <div class="relative p-6">
-        <div class="">
-            <a href="${orignial}/blogdetail/?blog=${item.id}" class="title text-xl font-medium hover:text-green-600 duration-500 ease-in-out">${item.heading}</a>
-
-            <div class="mt-3">
-                <a href="${orignial}/blogdetail/?blog=${item.id}" class="btn btn-link hover:text-green-600 after:bg-green-600 duration-500 ease-in-out">Read More <i class="uil uil-arrow-right"></i></a>
-            </div>
-        </div>
-    </div>
-</div>
-    `;
-})
-inside.innerHTML = ansblog.join('');
+let housex = document.querySelector(".housex")
+let blogx = document.querySelector(".blogx")
+let imgxx = document.querySelector(".imgxx")
+let wordin = document.querySelector(".wordin")
+let author = document.querySelector(".author")
+console.log(author, housex, imgxx)
+let blogfind = Blog.find((item)=>item.id == params.blog)
+console.log(params)
+if(blogfind){
 
 
-
-
+  blogx.innerText = blogfind.heading
+  housex.innerText = blogfind.category
+  imgxx.src = blogfind.picture
+  wordin.innerText = blogfind.body
+  author.innerText = 'By'+blogfind.author
+}else{
+    window.location.href =`${orignial}/blog`
+}

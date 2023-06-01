@@ -8,7 +8,7 @@ let original = window.location.origin
 let numberOfRow = 10;
 let currentPage = 1;
 let recentnum ;
-current.innerText = currentPage;
+current.innerText = 1;
 let page = Math.ceil(data.length / numberOfRow);
 const indexofLastPost =  currentPage * numberOfRow;
 const indexofFirstPost = indexofLastPost - numberOfRow;

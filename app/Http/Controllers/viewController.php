@@ -191,6 +191,14 @@ class viewController extends Controller
     public function gallery(){
         return view('gallery');
     }
+
+    public function blog(){
+        return view('blog');
+    }
+
+    public function blogdetail(){
+        return view('blogdetail');
+    }
 }
 
 
