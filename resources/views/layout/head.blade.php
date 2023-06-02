@@ -15,8 +15,28 @@
         <link rel="shortcut icon" href="assets/images/favicon.ico" />
         <script defer src="https://cdn.tailwindcss.com"></script>
 
-        @viteReactRefresh
-        @vite([
+        <link href="{{ asset('asset/libs/tiny-slider/tiny-slider.css') }}" rel="stylesheet">
+        <link href="{{ asset('asset/libs/tobii/css/tobii.min.css') }}" rel="stylesheet">
+        <link href="{{ asset('asset/libs/choices.js/public/assets/styles/choices.min.css') }}" rel="stylesheet">
+        <link href="{{ asset('asset/libs/@iconscout/unicons/css/line.css') }}" rel="stylesheet">
+        <link href="{{ asset('asset/cssx/icons.css') }}" rel="stylesheet">
+        <link href="{{ asset('asset/cssx/soon.css') }}" rel="stylesheet">
+        <link href="{{ asset('asset/cssx/cox.css') }}" rel="stylesheet">
+        <link href="{{ asset('asset/cssx/tailwind.min.css') }}" rel="stylesheet">
+        <script defer src="{{ asset('asset/libs/particles.js/particles.js') }}" ></script>
+        <script defer src="{{ asset('asset/libs/feather-icons/feather.min.js') }}" ></script>
+        <script defer src="{{ asset('asset/js/plugins.init.js') }}" ></script>
+        <script defer src="{{ asset('asset/js/appx.js') }}" ></script>
+        <script defer src="{{ asset('asset/js/leaderpic.js') }}" ></script>
+        <script defer src="{{ asset('asset/libs/tiny-slider/min/tiny-slider.js') }}" ></script>
+        <script defer src="{{ asset('asset/libs/tobii/js/tobii.min.js') }}"></script>
+        <script defer src="{{ asset('asset/libs/choices.js/public/assets/scripts/choices.min.js') }}" ></script>
+
+
+        {{--
+                   @viteReactRefresh
+
+            @vite([
               //choices.js
            'resources/libs/tiny-slider/tiny-slider.css',
           'resources/libs/tobii/css/tobii.min.css',
@@ -34,7 +54,7 @@
             'resources/libs/tiny-slider/min/tiny-slider.js',
             'resources/libs/tobii/js/tobii.min.js',
             'resources/libs/choices.js/public/assets/scripts/choices.min.js',
-            ])
+            ])  --}}
 
             {{--  <link href="assets/libs/tiny-slider/tiny-slider.css" rel="stylesheet">
             <link href="assets/libs/tobii/css/tobii.min.css" rel="stylesheet">

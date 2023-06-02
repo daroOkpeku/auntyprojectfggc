@@ -113,7 +113,7 @@ const Blog = [
 
 const urlSearchParams = new URLSearchParams(window.location.search);
 const params = Object.fromEntries(urlSearchParams.entries());
-
+let orignial = window.location.origin
 let housex = document.querySelector(".housex")
 let blogx = document.querySelector(".blogx")
 let imgxx = document.querySelector(".imgxx")

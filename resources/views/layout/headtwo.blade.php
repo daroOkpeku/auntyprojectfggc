@@ -11,8 +11,37 @@
         <link rel="shortcut icon" href="assets/images/favicon.ico" />
         <script defer src="https://cdn.tailwindcss.com"></script>
 
-        @viteReactRefresh
-        @vite([
+        <link href="{{ asset('asset/libs/tiny-slider/tiny-slider.css') }}" rel="stylesheet">
+        <link href="{{ asset('asset/libs/tobii/css/tobii.min.css') }}" rel="stylesheet">
+        <link href="{{ asset('asset/libs/choices.js/public/assets/styles/choices.min.css') }}" rel="stylesheet">
+        <link href="{{ asset('asset/libs/@iconscout/unicons/css/line.css') }}" rel="stylesheet">
+        <link href="{{ asset('asset/cssx/icons.css') }}" rel="stylesheet">
+        <link href="{{ asset('asset/cssx/soon.css') }}" rel="stylesheet">
+        <link href="{{ asset('asset/cssx/cox.css') }}" rel="stylesheet">
+        <link href="{{ asset('asset/cssx/tailwind.min.css') }}" rel="stylesheet">
+
+        <script defer src="{{ asset('asset/libs/particles.js/particles.js') }}" ></script>
+        <script defer src="{{ asset('asset/libs/feather-icons/feather.min.js') }}" ></script>
+        <script defer src="{{ asset('asset/js/plugins.init.js') }}" ></script>
+        <script defer src="{{ asset('asset/js/appx.js') }}" ></script>
+        <script defer src="{{ asset('asset/libs/tiny-slider/min/tiny-slider.js') }}" ></script>
+        <script defer src="{{ asset('asset/libs/tobii/js/tobii.min.js') }}"></script>
+        <script defer src="{{ asset('asset/libs/choices.js/public/assets/scripts/choices.min.js') }}" ></script>
+
+        <script defer type="module" src="{{  asset('asset/js/chapter.js') }}" ></script>
+        {{--  <script defer src="{{ asset('asset/js/about.js') }}" ></script>  --}}
+        <link href="{{ asset('asset/css/tailwind.css') }}" rel="stylesheet">
+        <link href="{{ asset('asset/css/icofont.css') }}" rel="stylesheet">
+        <link href="{{ asset('asset/css/prestroke.css') }}" rel="stylesheet">
+
+        <script defer type="module"  src="{{ asset('asset/js/infogallery.js') }}" ></script>
+         <script defer src="{{ asset('asset/js/blog.js') }}" ></script>
+        <script type="module" src="{{ asset('asset/js/blogdetail.js') }}" ></script>
+
+
+        {{--
+             @viteReactRefresh
+            @vite([
               //choices.js
            'resources/libs/tiny-slider/tiny-slider.css',
           'resources/libs/tobii/css/tobii.min.css',
@@ -22,6 +51,7 @@
           'resources/cssx/soon.css',
             'resources/cssx/cox.css',
             'resources/cssx/tailwind.min.css',
+
             'resources/libs/particles.js/particles.js',
             'resources/libs/feather-icons/feather.min.js',
             'resources/js/plugins.init.js',
@@ -29,6 +59,7 @@
             'resources/libs/tiny-slider/min/tiny-slider.js',
             'resources/libs/tobii/js/tobii.min.js',
             'resources/libs/choices.js/public/assets/scripts/choices.min.js',
+
             'resources/js/chapter.js',
             'resources/js/about.js',
 
@@ -38,7 +69,7 @@
             'resources/js/infogallery.js',
             'resources/js/blog.js',
             'resources/js/blogdetail.js'
-            ])
+            ])  --}}
         </head>
         <body class="dark:bg-slate-900">
             <nav id="topnav" class="defaultscroll is-sticky">
@@ -175,4 +206,7 @@
 
             })
         </script>
+
+        {{--  <script type="module" src="{{  asset('asset/js/data.js') }}"></script>  --}}
+
         </html>

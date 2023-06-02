@@ -9,16 +9,18 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <link rel="shortcut icon" href="assets/images/favicon.ico" />
 
-        @viteReactRefresh
-        @vite([
-            'resources/cssx/icons.css',
-            'resources/cssx/tailwind.min.css',
-            'resources/libs/@iconscout/unicons/css/line.css',
-            'resources/libs/particles.js/particles.js',
-            'resources/libs/feather-icons/feather.min.js',
-            'resources/js/appx.js',
-            'resources/js/plugins.init.js'
-            ])
+
+
+
+        <link href="{{ asset('asset/cssx/icons.css') }}" rel="stylesheet">
+        <link href="{{ asset('asset/cssx/tailwind.min.css') }}" rel="stylesheet">
+        <link href="{{ asset('asset/libs/@iconscout/unicons/css/line.css') }}" rel="stylesheet">
+        <script defer src="{{ asset('asset/libs/particles.js/particles.js') }}" ></script>
+        <script defer src="{{ asset('asset/libs/feather-icons/feather.min.js') }}" ></script>
+        <script defer src="{{ asset('asset/js/appx.js') }}" ></script>
+        <script defer src="{{ asset('asset/js/plugins.init.js') }}" ></script>
+
+
 
     </head>
 
