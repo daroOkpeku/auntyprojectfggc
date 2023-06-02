@@ -22,6 +22,4 @@ if(Object.keys(ansdata).length > 0){
  phone.innerText = ansdata?ansdata.phone:'none'
  web.innerText = ansdata?ansdata.website:'none'
  social.innerText = ansdata?ansdata.social:'none'
-}else{
-
 }

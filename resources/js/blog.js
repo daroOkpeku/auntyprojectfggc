@@ -1,4 +1,4 @@
-const Blog = [
+const blog = [
 
 
     {
@@ -114,7 +114,7 @@ const Blog = [
 let inside = document.querySelector(".inside");
 let orignial = window.location.origin
 
-let ansblog = Blog.map((item)=>{
+let ansblog = blog.map((item)=>{
 
     return `
     <div class="group relative h-fit hover:-mt-[5px] overflow-hidden bg-white dark:bg-slate-900 rounded-xl shadow dark:shadow-gray-700 transition-all duration-500">

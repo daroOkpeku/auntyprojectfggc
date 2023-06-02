@@ -110,7 +110,7 @@ const Blog = [
     }
 ]
 
-let orignial = window.location.origin;
+
 const urlSearchParams = new URLSearchParams(window.location.search);
 const params = Object.fromEntries(urlSearchParams.entries());
 
@@ -131,5 +131,5 @@ if(blogfind){
   wordin.innerText = blogfind.body
   author.innerText = 'By'+blogfind.author
 }else{
-    // window.location.href =`${orignial}/blog`
+
 }

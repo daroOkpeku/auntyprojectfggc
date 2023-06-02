@@ -112,10 +112,10 @@ const blog = [
 
 
 let inside = document.querySelector(".inside");
-let orignial = window.location.origin
+
 
 let ansblog = blog.map((item)=>{
-
+    let orignial = window.location.origin
     return `
     <div class="group relative h-fit hover:-mt-[5px] overflow-hidden bg-white dark:bg-slate-900 rounded-xl shadow dark:shadow-gray-700 transition-all duration-500">
     <div class="relative overflow-hidden">
